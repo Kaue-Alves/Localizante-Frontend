@@ -30,11 +30,11 @@ export default function page() {
                 <h1>Entrar na Conta</h1>
                 <div>
                     <label htmlFor="email">Email</label>
-                    <input type="email" id="email" placeholder="seuemail@email.com" value={email} required onChange={(e) => setEmail(e.target.value)}/>
+                    <input type="email" id="email" placeholder="Digite seu Email" value={email} required onChange={(e) => setEmail(e.target.value)}/>
                 </div>
                 <div>
                     <label htmlFor="senha">Senha</label>
-                    <input type={visivel ? "text" : "password"} id="senha" placeholder="teste" value={senha} required minLength={8} onChange={(e) => setSenha(e.target.value)}/>
+                    <input type={visivel ? "text" : "password"} id="senha" placeholder="Digite sua senha" value={senha} required minLength={8} onChange={(e) => setSenha(e.target.value)}/>
                     <div onClick={() => setVisivel(!visivel)}>
                         {visivel ? <FaEye className={styles.FaEye} /> : <FaEyeSlash className={styles.FaEyeSlash} />}
                     </div>

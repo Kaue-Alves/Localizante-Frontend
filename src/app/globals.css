@@ -1,5 +1,30 @@
+/* === Tema Light (padrão) === */
+
 :root {
   font-family: Arial;
+
+  --color-background: #F5F5F5;
+  --color-card: #FFFFFF;
+  --color-text: #000000;
+  --color-subtext: #6B7280;
+  --color-primary: #2563EB;
+  --color-link: #3B82F6;
+  --color-border: #9CA3AF;
+  --color-border-focus: #88a9e2;
+  --color-input-placeholder: #9CA3AF;
+}
+
+
+/* === Tema Dark === */
+[data-theme="dark"] {
+  --color-background: #1F1F1F;
+  --color-card: #111827;
+  --color-text: #FFFFFF;
+  --color-subtext: #9CA3AF;
+  --color-primary: #2563EB;
+  --color-link: #9CA3AF;
+  --color-border: #374151;
+  --color-input-placeholder: #6B7280;
 }
 
 html, body {
