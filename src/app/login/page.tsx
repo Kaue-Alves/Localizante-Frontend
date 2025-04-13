@@ -1,9 +1,9 @@
 "use client"
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styles from "./page.module.css"
 import { FaEye, FaEyeSlash  } from "react-icons/fa";
-import { handleLogin } from "./register.service";
+import { handleLogin } from "./login.service";
 import Link from "next/link";
 
 export default function page() {
