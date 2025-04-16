@@ -1,26 +1,21 @@
-import { ReactNode } from "react";
 import styles from "./containerLateral.module.css"
-import Image from "next/image";
+import Link from "next/link";
 
 export default function ContainerLateral() {
+
     return (
         <div className={styles.containerLateral}>
-            <h1>Bem Vindo ao TaskLi</h1>
+            
+            <h1>Bem Vindo ao <Link href="/" className={styles.link}>TaskLi</Link></h1>
 
-            <p>“Organize seu dia com praticidade.”</p>
+            <div className={styles.containerTextos}>
+                <p>“Organize seu dia com praticidade.”</p>
+                <p>“Dê check nas suas metas.”</p>
+                <p>“Sua produtividade começa aqui.”</p>
+            </div>
 
-            <p>“Dê check nas suas metas.”</p>
-
-            <p>“Sua produtividade começa aqui.”</p>
-
-            <div>
-                {/* <Image
-                    src={"/ilustracoes/ilustraçãoFundoLateral.png"}
-                    fill
-                    priority
-                    alt="Ilustração TaskLy"
-                /> */}
-                <img src="/ilustracoes/ilustraçãoFundoLateral.png" alt="Ilustração TaskLy" />
+            <div className={styles.containerImagem}>
+                <img src="/ilustracoes/ilustracaoFundoLateral.png" alt="Ilustração TaskLy" />
             </div>
         </div>
     )

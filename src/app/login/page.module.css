@@ -38,8 +38,8 @@
 
 .formLogin h1 {
     position: absolute;
-    top: 16%;
-    transform: translateY(-16%);
+    top: 10%;
+    transform: translateY(-10%);
 }
 
 .formLogin p {
@@ -95,12 +95,6 @@
         border-radius: 8px;
         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
         background-color: var(--color-card);
-    }
-
-    .formLogin h1 {
-        position: absolute;
-        top: 16%;
-        transform: translateY(-16%);
     }
 
     .FaEye,
