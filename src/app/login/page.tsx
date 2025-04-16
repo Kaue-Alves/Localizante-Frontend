@@ -5,7 +5,8 @@ import styles from "./page.module.css"
 import { FaEye, FaEyeSlash  } from "react-icons/fa";
 import { handleLogin } from "./login.service";
 import Link from "next/link";
-import Image from "next/image";
+import ContainerInputs from "@/components/ContainerInputs/containerInputs";
+import ContainerLateral from "@/components/ContainerLateral/containerLateral";
 
 export default function page() {
 
@@ -29,8 +30,8 @@ export default function page() {
       <main className={styles.page}>
           <form className={styles.formLogin} onSubmit={handleSubmit}>
                 <h1>Entrar na Conta</h1>
-                <div className={styles.containerInput}>
-                    <div>
+                <ContainerInputs>
+                <div>
                         <label htmlFor="email">Email</label>
                         <input type="email" id="email" placeholder="Digite seu Email" value={email} required onChange={(e) => setEmail(e.target.value)}/>
                     </div>
@@ -47,12 +48,13 @@ export default function page() {
                     <button type="submit">
                         Entrar
                     </button>
-                </div>
+                </ContainerInputs>
                 
                 <p>Não tem uma conta? <Link href="/cadastrar">Cadastre-se</Link></p>
                 <div className={styles.containerWaves}>
                 </div>
             </form>  
+            <ContainerLateral/>
       </main>
     
   )
